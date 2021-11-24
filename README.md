@@ -1,2 +1,6 @@
 # aztlangeek.github.io
-Aprende Ingeniería en Sistemas Computacionales con ejercicios resueltos.
+**Aprende programación con practicas resueltas.**
+
+##Redes sociales
+
+*Blog*: [aztlangeek](https://aztlangeek.wordpress.com/).
