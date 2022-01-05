@@ -5,73 +5,122 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/icono-aztlangeeks.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Montserrat:wght@300;400;700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="estilos.css">
-    <title>Aztlangeek</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>AZTLANGEEKS</title>
 </head>
 
 <body>
 
     <header class="azgk" id="azgk">
-        <h1>Aztlangeek</h1>
-        <p>Aprende Ingeniería en Sistemas computacionales con ejercicios resueltos</p>
+        <img src="img/logo-aztlangeeks.png" alt="Icono de AZTLANGEEKS">
     </header>
 
     <nav id="menu">
-        <a href="#a">Asignaturas</a>
-        <a href="#b">Redes sociales</a>
-        <a href="#c">Acerca de</a>
+        <a href="#a"><i class="fas fa-chevron-down"></i>Asignaturas</a>
+        <a href="#b"><i class="fas fa-chevron-down"></i>Redes sociales</a>
+        <a href="#c"><i class="fas fa-chevron-down"></i>Acerca de</a>
         <span class="indicador" id="indicador"></span>
     </nav>
 
-    <section class="secciones">
-        <div class="seccion" id="a">
-            <article class="targeta">
-                <h1>Asignaturas</h1>
-                <ol>
-                    <li>Primer semestre
-                        <ul>
-                            <li>Fundamentos de programacion</li>
-                        </ul>
-                    </li>
-                </ol>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis expedita fuga totam, odio laborum
-                    accusantium architecto nostrum perspiciatis molestiae sunt enim repellat quas autem dolorem numquam
-                    animi tempore corporis maxime!
-                </p>
-            </article>
+    <div class="seccion swiper mySwiper" id="a">
+        <h1>Asignaturas</h1>
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="img/undraw_programming_re_kg9v.svg" alt="Imagen del bloque uno">
+                <h2>Fundamentos de Programación</h2>
+                <p>Estado: <b>en elaboración</b><br>Clave: <b>SCD-1008</b></p>
+                <a href="aed-1008/aed-1008.html#a">Aprender</a>
+            </div>
+            <div class="swiper-slide">
+                <img src="img/undraw_programming_re_kg9v.svg" alt="Imagen del bloque uno">
+                <h2>Programación Orientada a Objetos</h2>
+                <p>Estado: <b>próximamente</b><br>Clave: <b>SCD-1020</b></p>
+                <a href="#">Aprender</a>
+            </div>
+            <div class="swiper-slide">
+                <img src="img/undraw_programming_re_kg9v.svg" alt="Imagen del bloque uno">
+                <h2>Estructura de Datos</h2>
+                <p>Estado: <b>próximamente</b><br>Clave: <b>AED-1026</b></p>
+                <a href="#">Aprender</a>
+            </div>
+            <div class="swiper-slide">
+                <img src="img/undraw_programming_re_kg9v.svg" alt="Imagen del bloque uno">
+                <h2>Tópicos Avanzados de Programación</h2>
+                <p>Estado: <b>próximamente</b><br>Clave: <b>SCD-1027</b></p>
+                <a href="#">Aprender</a>
+            </div>
         </div>
-    </section>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
 
-    <section class="secciones">
-        <div class="seccion" id="b">
-            <article class="targeta">
-                <h1>Redes sociales</h1>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis expedita fuga totam, odio laborum
-                    accusantium architecto nostrum perspiciatis molestiae sunt enim repellat quas autem dolorem numquam
-                    animi tempore corporis maxime!
+    <div class="seccion swiper mySwiper" id="b">
+        <h1>Redes sociales</h1>
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <i class="fab fa-blogger"></i>
+                <h2>Blog</h2>
+                <p>Encuetra artículos actualizados sobre temas de <dfn
+                        title="Ingeniería en Sistemas Computacionales">ISC</dfn>.<br>
+                        <b>aztlangeeks.blogspot.com</b>
+                    </p>
+                <a href="https://aztlangeeks.blogspot.com/">Visitar</a>
+            </div>
+            <div class="swiper-slide">
+                <i class="fab fa-facebook"></i>
+                <h2>Facebook</h2>
+                <p>Mantente actualizado cuando publiquemos contenido nuevo.<br>
+                    <b>facebook.com/AZTLANGEEKS</b>
                 </p>
-            </article>
+                <a href="https://www.facebook.com/AZTLANGEEKS-111861298011876">Visitar</a>
+            </div>
+            <div class="swiper-slide">
+                <i class="fab fa-twitter"></i>
+                <h2>Twitter</h2>
+                <p>Siguenos para ser de los primeros en obtener la información más fresca.<br>
+                    <b>@aztlangeeks</b>
+                </b>
+                </p>
+                <a href="https://twitter.com/aztlangeeks">Visitar</a>
+            </div>
+            <div class="swiper-slide">
+                <i class="fab fa-instagram-square"></i>
+                <h2>Instagram</h2>
+                <p><b>[Próximamente]</b>. Mi perfil en Instagram.</p>
+                <a href="https://www.instagram.com/aztlangeeks/">Visitar</a>
+            </div>
+            <div class="swiper-slide">
+                <img src="img/youtube-brands.svg" alt="Logotipo de YouTube">
+                <h2>Canal de YouTube</h2>
+                <p><b>Próximamente</b>. Canal oficial de AZTLANGEEKS.</p>
+                <a href="#">Visitar</a>
+            </div>
         </div>
-    </section>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
 
     <section class="secciones">
         <div class="seccion" id="c">
             <article class="targeta">
                 <h1>Acerca de</h1>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis expedita fuga totam, odio laborum
-                    accusantium architecto nostrum perspiciatis molestiae sunt enim repellat quas autem dolorem numquam
-                    animi tempore corporis maxime!
+                <p>Este es un blog sobre Ingeniería en Sistemas Computacionales ISCI-2010-224 y tiene la finalidad de
+                    que el estudiante aprenda muy rápido todos los temas. El enfoque de está página WEB esta en las
+                    materias de programación más que en otras materias.
                 </p>
             </article>
         </div>
     </section>
-    <script src="app.js"></script>
-    
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/e60d6199b9.js" crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
+
 </body>
 
 </html>

@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/icono-aztlangeeks.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <title>1.1 Clasificación del software de: sistemas y aplicación</title>
+</head>
+
+<body>
+
+    <header class="azgk" id="azgk">
+        <img src="../img/logo-aztlangeeks.png" alt="Icono de AZTLANGEEKS">
+    </header>
+
+    <nav id="menu">
+        <a href="#a"><i class="fas fa-chevron-down"></i>Ejercicio 1</a>
+        <a href="#b"><i class="fas fa-chevron-down"></i>Ejercicio 2</a>
+        <a href="#c"><i class="fas fa-chevron-down"></i>Ejercicio 3</a>
+        <a href="#d"><i class="fas fa-chevron-down"></i>Ejercicio 4</a>
+        <a href="#e"><i class="fas fa-chevron-down"></i>Ejercicio 5</a>
+        <span class="indicador" id="indicador"></span>
+    </nav>
+
+    <div class="seccion" id="a">
+        <h1>Ejercicio fdp01_t01_01: Producto.java</h1>
+        <p>Escriba un programa completo que calcule e imprima el producto de tres enteros.</p>
+        <div class="targeta">
+            <pre>
+// Ejercicio fdp01_t01_01: Producto.java
+// Calcular el producto de tres enteros.
+package t01_01;
+
+import java.util.Scanner;
+
+public class Producto {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        int x;
+        int y;
+        int z;
+        int resultado;
+
+        System.out.print("Escriba el primer entero: ");
+        x = sc.nextInt();
+
+        System.out.print("Escriba el segundo entero: ");
+        y = sc.nextInt();
+
+        System.out.print("Escriba el tercer entero: ");
+        z = sc.nextInt();
+
+        resultado = x * y * z;
+        
+        System.out.println("El producto es: " + resultado);
+    }
+    
+}
+            </pre>
+        </div>
+    </div>
+
+    <div class="seccion" id="b">
+        <h1>2.- Ejercicio fdp01_t01_02: Aritmetica.java</h1>
+        <P>Escriba una aplicación que pida al usuario que escriba dos números, que obtenga los números del usuario e
+            imprima la suma, producto, diferencia y cociente (división) de los números.</P>
+        <div class="targeta">
+            <pre>
+// Ejercicio fdp01_t01_02: Aritmetica.java
+// Programa que recibe dos números y muestra la suma, producto, diferencia y cociente (división).
+package t01_02;
+
+import java.util.Scanner;
+
+public class Aritmetica {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        int numero1;
+        int numero2;
+        int suma;
+        int diferencia;
+        int producto;
+        int cociente;
+        
+        System.out.print("Escribe el primer entero: ");
+        numero1 = sc.nextInt();
+        
+        System.out.print("Escribe el primer entero: ");
+        numero2 = sc.nextInt();
+        
+        suma = numero1 + numero2;
+        diferencia = numero1 - numero2;
+        producto = numero1 * numero2;
+        cociente = numero1 / numero2;
+        
+        System.out.println("La suma es: " + suma);
+        System.out.println("La diferencia es: " + diferencia);
+        System.out.println("La multiplicación es: " + producto);
+        System.out.println("La división es: " + cociente);
+    }
+    
+}
+            </pre>
+        </div>
+    </div>
+
+    <div class="seccion" id="c">
+        <h1>3.- Ejercicio fdp01_t01_03: ComparacionEnteros.java</h1>
+        <p>Escriba una aplicación que pida al usuario que escriba dos enteros, que obtenga los números del usuario y
+            muestre el número más grande, seguido de las palabras “<i>es más grande</i>”. Si los números son iguales,
+            imprima el mensaje “<i>Estos números son iguales</i>”.</p>
+        <div class="targeta">
+            <pre>
+// Ejercicio fdp01_t01_03: ComparacionEnteros.java
+// Programa que recibe dos números y muestra el número más grande, seguido de las palabras "es más grande".
+// Si los números son iguales, imprime el mensaje "Estos números son iguales".
+package t01_03;
+
+import java.util.Scanner;
+
+public class ComparacionEnteros {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        int numero1;
+        int numero2;
+
+        System.out.print("Escriba el primer entero: ");
+        numero1 = sc.nextInt();
+
+        System.out.print("Escriba el segundo entero: ");
+        numero2 = sc.nextInt();
+        
+        if (numero1 > numero2) {
+            System.out.println(numero1 + " es más grande");
+        }
+        
+        if (numero2 > numero1) {
+            System.out.println(numero2 + " es más grande");
+        }
+        
+        if (numero1 == numero2) {
+            System.out.println("Estos números son iguales");
+        }
+    }
+    
+}
+            </pre>
+        </div>
+    </div>
+
+    <div class="seccion" id="d">
+        <h1>4.- Ejercicio fdp01_t01_04: AritmeticaMenorMayor.java</h1>
+        <p>Escriba una aplicación que reciba tres enteros del usuario y muestre la suma, promedio, producto, menor y
+            mayor de esos números.</p>
+        <div class="targeta">
+            <pre>
+// Ejercicio fdp01_t01_04: AritmeticaMenorMayor.java
+// Aplicación que recibe tres enteros y muestre la suma, promedio, producto, menor y mayor de esos números.
+package t01_04;
+
+import java.util.Scanner;
+
+public class AritmeticaMenorMayor {
+
+    public static void main(String[] args) {
+       Scanner sc = new Scanner(System.in);
+       
+        int numero1;
+        int numero2;
+        int numero3;
+        int suma;
+        int promedio;
+        int producto;
+
+        System.out.print("Escriba el primer entero: ");
+        numero1 = sc.nextInt();
+
+        System.out.print("Escriba el segundo entero: ");
+        numero2 = sc.nextInt();
+
+        System.out.print("Escriba el tercer entero: ");
+        numero3 = sc.nextInt();
+
+        suma = numero1 + numero2 + numero3;
+        promedio = suma / 3;
+        producto = numero1 * numero2 * numero3;
+        
+        System.out.println("La suma es: " + suma);
+        System.out.println("El promedio es: " + promedio);
+        System.out.println("El producto es: " + producto);
+        
+        if (numero1 < numero2)
+            if (numero1 < numero3)
+                System.out.println(numero1 + " es el menor");
+        
+        if (numero2 < numero1)
+            if (numero2 < numero3)
+                System.out.println(numero2 + " es el menor");
+        
+        if (numero3 < numero1)
+            if (numero3 < numero2)
+                System.out.println(numero3 + " es el menor");
+        
+        if (numero1 > numero2)
+            if (numero1 > numero3)
+                System.out.println(numero1 + " es el mayor");
+        
+        if (numero2 > numero1)
+            if (numero2 > numero3)
+                System.out.println(numero2 + " es el mayor");
+        
+        if (numero3 > numero1)
+            if (numero3 > numero2)
+                System.out.println(numero3 + " es el mayor");
+    }
+    
+}
+            </pre>
+        </div>
+    </div>
+
+    <div class="seccion" id="e">
+        <h1>5.- Ejercicio fdp01_t01_05: EnterosMenorMayor.java</h1>
+        <p>Escriba una aplicación que lea cinco enteros y que determine e imprima los enteros mayor y menor en el grupo.
+        </p>
+        <div class="targeta">
+            <pre>
+// Ejercicio fdp01_t01_05: EnterosMenorMayor.java
+// Aplicación que lee cinco enteros y que determina e imprime los enteros mayor y menor en el grupo.
+package t01_05;
+
+import java.util.Scanner;
+
+public class EnterosMenorMayor {
+
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+
+        int numero1;
+        int numero2;
+        int numero3;
+        int numero4;
+        int numero5;
+        
+        System.out.print("Escriba el primer entero: ");
+        numero1 = entrada.nextInt();
+        
+        System.out.print("Escriba el segundo entero: ");
+        numero2 = entrada.nextInt();
+        
+        System.out.print("Escriba el tercer entero: ");
+        numero3 = entrada.nextInt();
+        
+        System.out.print("Escriba el cuarto entero: ");
+        numero4 = entrada.nextInt();
+        
+        System.out.print("Escriba el quinto entero: ");
+        numero5 = entrada.nextInt();
+        
+        if (numero1 > numero2)
+            if (numero1 > numero3)
+                if (numero1 > numero4)
+                    if (numero1 > numero5)
+                        System.out.println(numero1 + " es el mayor");
+        
+        if (numero2 > numero1)
+            if (numero2 > numero3)
+                if (numero2 > numero4)
+                    if (numero2 > numero5)
+                        System.out.println(numero2 + " es el mayor");
+        
+        if (numero3 > numero1)
+            if (numero3 > numero2)
+                if (numero3 > numero4)
+                    if (numero3 > numero5)
+                        System.out.println(numero3 + " es el mayor");
+        
+        if (numero4 > numero1)
+            if (numero4 > numero2)
+                if (numero4 > numero3)
+                    if (numero4 > numero5)
+                        System.out.println(numero4 + " es el mayor");
+        
+        if (numero5 > numero1)
+            if (numero5 > numero2)
+                if (numero5 > numero3)
+                    if (numero5 > numero4)
+                        System.out.println(numero5 + " es el mayor");
+        
+        if (numero1 < numero2)
+            if (numero1 < numero3)
+                if (numero1 < numero4)
+                    if (numero1 < numero5)
+                        System.out.println(numero1 + " es el menor");
+        
+        if (numero2 < numero1)
+            if (numero2 < numero3)
+                if (numero2 < numero4)
+                    if (numero2 < numero5)
+                        System.out.println(numero2 + " es el menor");
+        
+        if (numero3 < numero1)
+            if (numero3 < numero2)
+                if (numero3 < numero4)
+                    if (numero3 < numero5)
+                        System.out.println(numero3 + " es el menor");
+        
+        if (numero4 < numero1)
+            if (numero4 < numero2)
+                if (numero4 < numero3)
+                    if (numero4 < numero5)
+                        System.out.println(numero4 + " es el menor");
+        
+        if (numero5 < numero1)
+            if (numero5 < numero2)
+                if (numero5 < numero3)
+                    if (numero5 < numero4)
+                        System.out.println(numero5 + " es el menor");
+    }
+    
+}
+            </pre>
+        </div>
+    </div>
+
+    <div class="submenu">
+        <a href="aed-1008.html#a"><i class="fas fa-chevron-left"></i>Regresar</a>
+        <a href="https://aztlangeeks.blogspot.com/2021/12/software-sistemas-aplicacion.html">Artículo en Blogger<i
+                class="fab fa-blogger"></i></a>
+        <span class="subindicador" id="subindicador"></span>
+    </div>
+
+    <script src="https://kit.fontawesome.com/e60d6199b9.js" crossorigin="anonymous"></script>
+    <script src="../js/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/icono-aztlangeeks.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <title>1.2 Algoritmo</title>
+</head>
+
+<body>
+
+    <header class="azgk" id="azgk">
+        <img src="../img/logo-aztlangeeks.png" alt="Icono de AZTLANGEEKS">
+    </header>
+
+    <nav id="menu">
+        <a href="#a"><i class="fas fa-chevron-down"></i>Ejercicio 1</a>
+        <a href="#b"><i class="fas fa-chevron-down"></i>Ejercicio 2</a>
+        <a href="#c"><i class="fas fa-chevron-down"></i>Ejercicio 3</a>
+        <a href="#d"><i class="fas fa-chevron-down"></i>Ejercicio 4</a>
+        <a href="#e"><i class="fas fa-chevron-down"></i>Ejercicio 5</a>
+        <span class="indicador" id="indicador"></span>
+    </nav>
+
+    <div class="seccion" id="a">
+        <h1>1.- Ejercicio fdp01_t02_01: ParImpar.java</h1>
+        <p>Escriba una aplicación que
+            lea un entero y que determine e imprima si es impar o par [<i>sugerencia</i>:
+            use el operador residuo. Un número par es un múltiplo de 2. Cualquier múltiplo
+            de 2 deja un residuo de 0 cuando se divide entre 2].</p>
+        <div class="targeta">
+            <pre>
+// Ejercicio fdp01_t02_01: ParImpar.java
+// Aplicación que lee un entero y que determina e imprime si es impar o par.
+package t02_01;
+
+import java.util.Scanner;
+
+public class ParImpar {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        int numero;
+        
+        System.out.print("Escriba un número entero: ");
+        numero = sc.nextInt();
+        
+        if (numero % 2 == 0)
+            System.out.println(numero + " es un número par.");
+        
+        if (numero % 2 == 1)
+            System.out.println(numero + " es un número impar.");
+    }
+    
+}                
+            </pre>
+        </div>
+    </div>
+
+    <div class="seccion" id="b">
+        <h1>2.- Ejercicio fdp01_t02_02: Multiplos.java</h1>
+        <p>Escriba una aplicación que
+            lea dos enteros, determine si el primero es un múltiplo del segundo e imprima
+            el resultado.</p>
+        <div class="targeta">
+            <pre>
+// Ejercicio fdp01_t02_02: Multiplos.java
+// Aplicación que lea dos enteros, determine si el primero es un múltiplo del segundo.
+package t02_02;
+
+import java.util.Scanner;
+
+public class Multiplos {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        int numero1;
+        int numero2;
+        
+        System.out.print("Escriba el primer entero: ");
+        numero1 = sc.nextInt();
+        
+        System.out.print("Escriba el segundo entero: ");
+        numero2 = sc.nextInt();
+        
+        if (numero1 % numero2 == 0)
+            System.out.println(numero1 + " es multiplo de " + numero2);
+        
+        if (numero1 % numero2 != 0)
+            System.out.println(numero1 + " no es multiplo de " + numero2);
+    }
+    
+}                
+            </pre>
+        </div>
+    </div>
+
+    <div class="seccion" id="c">
+        <h1>Ejercicio fdp01_t02_03: AritmeticaCirculo.java</h1>
+        <p>Escriba una aplicación que reciba del usuario el radio de un círculo como un entero, y que
+            imprima el diámetro, la circunferencia y el área del círculo.</p>
+        <div class="targeta">
+            <pre>
+// Ejercicio fdp01_t02_03: AritmeticaCirculo.java
+// Aplicación que recibe el radio de un círculo como un entero, y que imprime 
+// el diámetro, la circunferencia y el área del círculo
+package t02_03;
+
+import java.util.Scanner;
+
+public class AritmeticaCirculo {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        int radio;
+        
+        System.out.print("Escriba el radio del circulo: ");
+        radio = sc.nextInt();
+        
+        System.out.println("El diametro es " + (2 * radio));
+        System.out.println("La circunferencia es " + (2 * Math.PI * radio));
+        System.out.println("El área es "+ (Math.PI) * Math.pow(radio, 2));
+    }
+
+}                
+            </pre>
+        </div>
+    </div>
+
+    <div class="seccion" id="d">
+        <h1>4.- Ejercicio fdp01_t02_04: ValorCaracter.java</h1>
+        <p>Escriba una aplicación que muestre los equivalentes enteros de algunas letras en mayúsculas, en
+            minúsculas, dígitos y símbolos especiales.</p>
+        <div class="targeta">
+            <pre>
+// Ejercicio fdp01_t02_04: ValorCaracter.java
+// Aplicación que muestra los equivalentes enteros de algunas letras en mayúsculas, 
+// en minúsculas, dígitos y símbolos especiales.
+package t02_04;
+
+public class ValorCaracter {
+
+    public static void main(String[] args) {
+        System.out.println("El caracter A tiene el valor de " + (int)'A');
+        System.out.println("El caracter B tiene el valor de " + (int)'B');
+        System.out.println("El caracter C tiene el valor de " + (int)'C');
+        System.out.println("El caracter a tiene el valor de " + (int)'a');
+        System.out.println("El caracter b tiene el valor de " + (int)'b');
+        System.out.println("El caracter c tiene el valor de " + (int)'c');
+        System.out.println("El caracter 0 tiene el valor de " + (int)'0');
+        System.out.println("El caracter 1 tiene el valor de " + (int)'1');
+        System.out.println("El caracter 2 tiene el valor de " + (int)'2');
+        System.out.println("El caracter $ tiene el valor de " + (int)'$');
+        System.out.println("El caracter * tiene el valor de " + (int)'*');
+        System.out.println("El caracter + tiene el valor de " + (int)'+');
+        System.out.println("El caracter / tiene el valor de " + (int)'/');
+        System.out.println("El caracter   tiene el valor de " + (int)' ');
+    }
+    
+}                
+            </pre>
+        </div>
+    </div>
+
+    <div class="seccion" id="e">
+        <h1>5.- Ejercicio fdp01_t02_05: SeparacionDigitos.java</h1>
+        <p>Escriba una aplicación que reciba del usuario un número compues- to por cinco dígitos, que
+            separe ese número en sus dígitos individuales y los imprima, cada uno separado
+            de los demás por tres espacios.</p>
+        <div class="targeta">
+            <pre>
+// Ejercicio fdp01_t02_05: SeparacionDigitos.java
+// Aplicación que recibe del usuario un número compuesto por cinco dígitos, que separe ese número en sus dígitos 
+// individuales y los imprima, cada uno separado de los demás por tres espacios.
+package t02_05;
+
+import java.util.Scanner;
+
+public class SeparacionDigitos {
+
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+        
+        int numero;
+        int unidad;
+        int decena;
+        int centena;
+        int millar;
+        int u_millar;
+        
+        System.out.print("Escriba un entero de cinco digitos: ");
+        numero = entrada.nextInt();
+        
+        u_millar = numero / 10000;
+        millar = numero / 1000;
+        millar = millar % 10;
+        centena = numero / 100;
+        centena = centena % 10;
+        decena = numero / 10;
+        decena = decena % 10;
+        unidad = numero / 1;
+        unidad = unidad % 10;
+        
+        System.out.println(u_millar + "   " + millar + "   " + centena + "   " + decena + "   " + unidad);
+    }
+    
+}                
+            </pre>
+        </div>
+    </div>
+
+    <div class="submenu">
+        <a href="aed-1008.html#a"><i class="fas fa-chevron-left"></i>Regresar</a>
+        <a href="https://aztlangeeks.blogspot.com/2021/12/algoritmo.html">Artículo en Blogger<i
+                class="fab fa-blogger"></i></a>
+        <span class="subindicador" id="subindicador"></span>
+    </div>
+
+    <script src="https://kit.fontawesome.com/e60d6199b9.js" crossorigin="anonymous"></script>
+    <script src="../js/app.js"></script>
+
+</body>
+
+</html>
